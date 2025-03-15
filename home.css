@@ -1,0 +1,120 @@
+#about {
+    color: white;
+    padding: 5rem 0;
+    width: auto;
+    margin-bottom: 5vh; /* Tambah jarak sebelum wave */
+}
+
+/* Overlay agar teks lebih terbaca */
+#about .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.small-img {
+    max-width: auto;
+    height: auto;
+}
+
+.content-spacing {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* css untuk bagian out services */
+.service-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Pastikan tinggi seragam */
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+}
+.service-item img {
+    width: 100%; /* Mengurangi lebar gambar agar tidak full width */
+    height: 100px; /* Batasi tinggi gambar agar tidak terlalu besar */
+    object-fit: cover; /* Menyesuaikan gambar tanpa distorsi */
+    border-radius: 10px;
+}
+.service-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+}
+
+/* header */
+.hero-section {
+    background: url('Photo\ by\ Stepan\ Kulyk\ on\ Unsplash.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    color: white;
+    overflow: hidden; /* Menghindari pemotongan aneh */
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hero-text {
+    flex: 1;
+    padding: 20px;
+    max-width: 45%;
+}
+.hero-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+.hero-image img {
+    width: 70%; /* Mengecilkan gambar */
+    height: auto;
+}
+/* Wave effect */
+.wave {
+    position: absolute;
+    bottom: -10px; /* Menurunkan wave */
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+/* About Us Section */
+.about-section {
+    padding: 50px 0;
+    background-color: white;
+    text-align: center;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+    .wafe {
+        bottom: -5px;
+    }
+}
